@@ -9,10 +9,15 @@
 .App{
     background-color: var(--body-bg-color);
     display: flex;
+    flex-direction: row;
     margin-top: 30px;
     padding-right: 20px;
     padding-left: 20px;
     justify-content: space-around;
+}
+.container{
+    width: 100%;
+    display: flex;
 }
 .container-right{
     width: 100%;
@@ -146,7 +151,7 @@
     font-size: 20px;
     color: var(--text-color);
 }
-.user-card text{
+.   -card text{
     font-size: 14px;
     color: var(--text-color);
 }
@@ -230,4 +235,85 @@ ul{
 ul, li{
     color: var(--text-color);
     
+}
+@media (max-width: 450px) and (min-width: 320px){
+    .App{
+        width: 100%;
+        padding: 0px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .user-card h5{
+        color: --var(--text-color);
+    }
+    .container-right{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .header-title{
+        width: 100%;
+    }
+    .project-cards-container{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+    }
+    .user-card{
+        width: 100%;
+    }
+    .info-card{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px){
+    body{
+        margin: 0px
+    }
+    .App{
+        width: 100%;
+        padding: 0px;
+
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+       
+    }
+    .container-left{
+        width: 90%;
+        
+    }
+    .container-right{
+        width: 100%;
+    }
+    .header-title{
+        width: 100%;
+    }
+    .project-cards-container{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+    }
+    .user-card{
+        width: 100%;
+    }
+    .info-card{
+        width: 100%;
+    }
+    
+}
+@media (min-width: 1440px){
+
 }

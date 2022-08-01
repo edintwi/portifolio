@@ -11,7 +11,7 @@ export function UserCard(){
             <h1>
                 Edson Brandon
             </h1>
-            <text> Front End Developer</text>
+            <h5> Front End Developer</h5>
 
         </div>
     )
